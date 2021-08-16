@@ -1,8 +1,6 @@
 class DashboardsController < ApplicationController
   def show
     @shout = Shout.new
-    render
+    @shouts = current_user.shouts
   end
-
-
 end
